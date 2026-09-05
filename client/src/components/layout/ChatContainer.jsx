@@ -17,7 +17,7 @@ function ChatContainer({selectedContact,user}) {
   async function getAllMessages() {
     try {
       
-      const response = await axios.post("http://localhost:8000/api/v1/user/loadChat",{
+      const response = await axios.post("https://webchat-i88q.onrender.com/api/v1/user/loadChat",{
         senderID:user._id,
         receiverID:selectedContact._id
       },{
@@ -45,7 +45,7 @@ function ChatContainer({selectedContact,user}) {
 
       sendSocketMessage(data)
 
-      const response = await axios.post("http://localhost:8000/api/v1/user/save",data,{
+      const response = await axios.post("https://webchat-i88q.onrender.com/api/v1/user/save",data,{
         withCredentials: true
         });
 

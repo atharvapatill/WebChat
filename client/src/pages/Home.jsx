@@ -23,7 +23,7 @@ function Home() {
 
   async function getUser() {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/user/me",{
+      const response = await axios.get("https://webchat-i88q.onrender.com/api/v1/user/me",{
         withCredentials: true
         })
         setUser(response.data.user)

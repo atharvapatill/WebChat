@@ -10,7 +10,7 @@ function Sidebar({ user, setSelectedContact }) {
     try {
 
       const response = await axios.get(
-        "http://localhost:8000/api/v1/user/getAllUsers",
+        "https://webchat-i88q.onrender.com/api/v1/user/getAllUsers",
         {
           withCredentials: true
         }

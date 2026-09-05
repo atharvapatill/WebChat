@@ -12,7 +12,7 @@ function Register() {
 
   const onRegister = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/api/v1/auth/registration",{
+      const response = await axios.post("https://webchat-i88q.onrender.com/api/v1/auth/registration",{
         name : name,
         username : username,
         password : password

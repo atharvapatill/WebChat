@@ -9,7 +9,7 @@ function Navbar({setSelectedContact}) {
     try {
 
       const response = await axios.delete(
-        "http://localhost:8000/api/v1/auth/logout",
+        "https://webchat-i88q.onrender.com/api/v1/auth/logout",
         {
           withCredentials: true
         }
